@@ -1,0 +1,851 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Admin",
+      "email": "admin@cloudinventory.com",
+      "password": "d3be25ce2f83c4e0:4884d4aef41f6b9bea6118b31c20736e7ab89fa1e9d1ce3a65012b9314ced50e",
+      "settings": {
+        "theme": "light",
+        "defaultRegion": "all",
+        "emailAlerts": true
+      }
+    }
+  ],
+  "sessions": {
+    "26c1c69be590af6c7188551448e94aaa49a7ee53954b0731": "usr_admin"
+  },
+  "accounts": [
+    {
+      "id": "acc_prod",
+      "name": "Production AWS",
+      "provider": "AWS",
+      "accountId": "123456789012",
+      "status": "connected",
+      "lastSync": "2026-11-22T16:33:06.287Z"
+    },
+    {
+      "id": "acc_stg",
+      "name": "Staging AWS",
+      "provider": "AWS",
+      "accountId": "987654321098",
+      "status": "connected",
+      "lastSync": "2026-11-22T16:33:06.287Z"
+    },
+    {
+      "id": "acc_dev",
+      "name": "Development AWS",
+      "provider": "AWS",
+      "accountId": "555123456789",
+      "status": "connected",
+      "lastSync": "2026-11-21T16:33:06.287Z"
+    },
+    {
+      "id": "acc_az",
+      "name": "Analytics Azure",
+      "provider": "Azure",
+      "accountId": "aaaa-bbbb-cccc-dddd",
+      "status": "disconnected",
+      "lastSync": "2026-11-18T16:33:06.287Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ast_77fa6c4826",
+      "name": "ec2-prod-01",
+      "type": "EC2",
+      "accountId": "acc_prod",
+      "region": "us-west-2",
+      "status": "unused",
+      "env": "prod",
+      "cost": 5,
+      "createdAt": "2026-11-22T16:33:06.288Z"
+    },
+    {
+      "id": "ast_87929dfffd",
+      "name": "s3-staging-02",
+      "type": "S3",
+      "accountId": "acc_stg",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "staging",
+      "cost": 42,
+      "createdAt": "2026-11-19T16:33:06.288Z"
+    },
+    {
+      "id": "ast_6c27f17c45",
+      "name": "rds-dev-03",
+      "type": "RDS",
+      "accountId": "acc_dev",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 79,
+      "createdAt": "2026-11-16T16:33:06.288Z"
+    },
+    {
+      "id": "ast_5e2ce0e7d0",
+      "name": "lambda-prod-04",
+      "type": "Lambda",
+      "accountId": "acc_az",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 26,
+      "createdAt": "2026-11-13T16:33:06.288Z"
+    },
+    {
+      "id": "ast_b92f3f163c",
+      "name": "vpc-staging-05",
+      "type": "VPC",
+      "accountId": "acc_prod",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 63,
+      "createdAt": "2026-11-10T16:33:06.288Z"
+    },
+    {
+      "id": "ast_efca65f4a0",
+      "name": "ebs-dev-06",
+      "type": "EBS",
+      "accountId": "acc_stg",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "dev",
+      "cost": 10,
+      "createdAt": "2026-11-07T16:33:06.288Z"
+    },
+    {
+      "id": "ast_e3bad159bb",
+      "name": "iam-prod-07",
+      "type": "IAM",
+      "accountId": "acc_dev",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "prod",
+      "cost": 47,
+      "createdAt": "2026-11-04T16:33:06.288Z"
+    },
+    {
+      "id": "ast_64deed4982",
+      "name": "ec2-staging-08",
+      "type": "EC2",
+      "accountId": "acc_az",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 84,
+      "createdAt": "2026-11-01T16:33:06.288Z"
+    },
+    {
+      "id": "ast_ad0b5867d4",
+      "name": "s3-dev-09",
+      "type": "S3",
+      "accountId": "acc_prod",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 31,
+      "createdAt": "2026-10-29T16:33:06.288Z"
+    },
+    {
+      "id": "ast_a4eec0ee4b",
+      "name": "rds-prod-10",
+      "type": "RDS",
+      "accountId": "acc_stg",
+      "region": "ap-south-1",
+      "status": "unused",
+      "env": "prod",
+      "cost": 68,
+      "createdAt": "2026-10-26T16:33:06.288Z"
+    },
+    {
+      "id": "ast_2c575c3c8b",
+      "name": "lambda-staging-11",
+      "type": "Lambda",
+      "accountId": "acc_dev",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "staging",
+      "cost": 15,
+      "createdAt": "2026-10-23T16:33:06.288Z"
+    },
+    {
+      "id": "ast_eff68ba965",
+      "name": "vpc-dev-12",
+      "type": "VPC",
+      "accountId": "acc_az",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "dev",
+      "cost": 52,
+      "createdAt": "2026-10-20T16:33:06.288Z"
+    },
+    {
+      "id": "ast_4e2185edd7",
+      "name": "ebs-prod-13",
+      "type": "EBS",
+      "accountId": "acc_prod",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 89,
+      "createdAt": "2026-10-17T16:33:06.288Z"
+    },
+    {
+      "id": "ast_34d243af4a",
+      "name": "iam-staging-14",
+      "type": "IAM",
+      "accountId": "acc_stg",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 36,
+      "createdAt": "2026-10-14T16:33:06.288Z"
+    },
+    {
+      "id": "ast_6f9a004a30",
+      "name": "ec2-dev-15",
+      "type": "EC2",
+      "accountId": "acc_dev",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 73,
+      "createdAt": "2026-10-11T16:33:06.288Z"
+    },
+    {
+      "id": "ast_a881c67fbf",
+      "name": "s3-prod-16",
+      "type": "S3",
+      "accountId": "acc_az",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "prod",
+      "cost": 20,
+      "createdAt": "2026-10-08T16:33:06.288Z"
+    },
+    {
+      "id": "ast_52f4164bcf",
+      "name": "rds-staging-17",
+      "type": "RDS",
+      "accountId": "acc_prod",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "staging",
+      "cost": 57,
+      "createdAt": "2026-10-05T16:33:06.288Z"
+    },
+    {
+      "id": "ast_5363bb8bb6",
+      "name": "lambda-dev-18",
+      "type": "Lambda",
+      "accountId": "acc_stg",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 94,
+      "createdAt": "2026-10-02T16:33:06.288Z"
+    },
+    {
+      "id": "ast_b5c2b67c2b",
+      "name": "vpc-prod-19",
+      "type": "VPC",
+      "accountId": "acc_dev",
+      "region": "us-east-1",
+      "status": "unused",
+      "env": "prod",
+      "cost": 41,
+      "createdAt": "2026-09-29T16:33:06.288Z"
+    },
+    {
+      "id": "ast_9bf710ad28",
+      "name": "ebs-staging-20",
+      "type": "EBS",
+      "accountId": "acc_az",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 78,
+      "createdAt": "2026-09-26T16:33:06.288Z"
+    },
+    {
+      "id": "ast_01538d691b",
+      "name": "iam-dev-21",
+      "type": "IAM",
+      "accountId": "acc_prod",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "dev",
+      "cost": 25,
+      "createdAt": "2026-09-23T16:33:06.288Z"
+    },
+    {
+      "id": "ast_6185b375fd",
+      "name": "ec2-prod-22",
+      "type": "EC2",
+      "accountId": "acc_stg",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "prod",
+      "cost": 62,
+      "createdAt": "2026-09-20T16:33:06.288Z"
+    },
+    {
+      "id": "ast_cc5da5d805",
+      "name": "s3-staging-23",
+      "type": "S3",
+      "accountId": "acc_dev",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 9,
+      "createdAt": "2026-09-17T16:33:06.288Z"
+    },
+    {
+      "id": "ast_d3c5d3835f",
+      "name": "rds-dev-24",
+      "type": "RDS",
+      "accountId": "acc_az",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 46,
+      "createdAt": "2026-09-14T16:33:06.288Z"
+    },
+    {
+      "id": "ast_c6e2725867",
+      "name": "lambda-prod-25",
+      "type": "Lambda",
+      "accountId": "acc_prod",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 83,
+      "createdAt": "2026-09-11T16:33:06.288Z"
+    },
+    {
+      "id": "ast_49121c552b",
+      "name": "vpc-staging-26",
+      "type": "VPC",
+      "accountId": "acc_stg",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "staging",
+      "cost": 30,
+      "createdAt": "2026-09-08T16:33:06.288Z"
+    },
+    {
+      "id": "ast_79bbbd7b1f",
+      "name": "ebs-dev-27",
+      "type": "EBS",
+      "accountId": "acc_dev",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "dev",
+      "cost": 67,
+      "createdAt": "2026-09-05T16:33:06.288Z"
+    },
+    {
+      "id": "ast_600051b1ea",
+      "name": "iam-prod-28",
+      "type": "IAM",
+      "accountId": "acc_az",
+      "region": "eu-west-1",
+      "status": "unused",
+      "env": "prod",
+      "cost": 14,
+      "createdAt": "2026-09-02T16:33:06.288Z"
+    },
+    {
+      "id": "ast_9697fb1949",
+      "name": "ec2-staging-29",
+      "type": "EC2",
+      "accountId": "acc_prod",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 51,
+      "createdAt": "2026-08-30T16:33:06.288Z"
+    },
+    {
+      "id": "ast_62784b3328",
+      "name": "s3-dev-30",
+      "type": "S3",
+      "accountId": "acc_stg",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 88,
+      "createdAt": "2026-08-27T16:33:06.288Z"
+    },
+    {
+      "id": "ast_d38d51ad49",
+      "name": "rds-prod-31",
+      "type": "RDS",
+      "accountId": "acc_dev",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "prod",
+      "cost": 35,
+      "createdAt": "2026-08-24T16:33:06.288Z"
+    },
+    {
+      "id": "ast_9bf8e9f3a6",
+      "name": "lambda-staging-32",
+      "type": "Lambda",
+      "accountId": "acc_az",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "staging",
+      "cost": 72,
+      "createdAt": "2026-08-21T16:33:06.288Z"
+    },
+    {
+      "id": "ast_30ccc304b5",
+      "name": "vpc-dev-33",
+      "type": "VPC",
+      "accountId": "acc_prod",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 19,
+      "createdAt": "2026-08-18T16:33:06.288Z"
+    },
+    {
+      "id": "ast_41ef1da889",
+      "name": "ebs-prod-34",
+      "type": "EBS",
+      "accountId": "acc_stg",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 56,
+      "createdAt": "2026-08-15T16:33:06.288Z"
+    },
+    {
+      "id": "ast_b02764bdd1",
+      "name": "iam-staging-35",
+      "type": "IAM",
+      "accountId": "acc_dev",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 93,
+      "createdAt": "2026-08-12T16:33:06.288Z"
+    },
+    {
+      "id": "ast_b3f94e114b",
+      "name": "ec2-dev-36",
+      "type": "EC2",
+      "accountId": "acc_az",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "dev",
+      "cost": 40,
+      "createdAt": "2026-08-09T16:33:06.288Z"
+    },
+    {
+      "id": "ast_401f16d665",
+      "name": "s3-prod-37",
+      "type": "S3",
+      "accountId": "acc_prod",
+      "region": "ap-southeast-2",
+      "status": "unused",
+      "env": "prod",
+      "cost": 77,
+      "createdAt": "2026-08-06T16:33:06.288Z"
+    },
+    {
+      "id": "ast_71eb726a39",
+      "name": "rds-staging-38",
+      "type": "RDS",
+      "accountId": "acc_stg",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 24,
+      "createdAt": "2026-08-03T16:33:06.288Z"
+    },
+    {
+      "id": "ast_2531ba0ecc",
+      "name": "lambda-dev-39",
+      "type": "Lambda",
+      "accountId": "acc_dev",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 61,
+      "createdAt": "2026-07-31T16:33:06.288Z"
+    },
+    {
+      "id": "ast_7630c1a4df",
+      "name": "vpc-prod-40",
+      "type": "VPC",
+      "accountId": "acc_az",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 8,
+      "createdAt": "2026-07-28T16:33:06.288Z"
+    },
+    {
+      "id": "ast_c67f589521",
+      "name": "ebs-staging-41",
+      "type": "EBS",
+      "accountId": "acc_prod",
+      "region": "us-west-2",
+      "status": "stopped",
+      "env": "staging",
+      "cost": 45,
+      "createdAt": "2026-07-25T16:33:06.288Z"
+    },
+    {
+      "id": "ast_1cad6c31b8",
+      "name": "iam-dev-42",
+      "type": "IAM",
+      "accountId": "acc_stg",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "dev",
+      "cost": 82,
+      "createdAt": "2026-07-22T16:33:06.288Z"
+    },
+    {
+      "id": "ast_1509ee57bc",
+      "name": "ec2-prod-43",
+      "type": "EC2",
+      "accountId": "acc_dev",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "prod",
+      "cost": 29,
+      "createdAt": "2026-07-19T16:33:06.288Z"
+    },
+    {
+      "id": "ast_22651543d9",
+      "name": "s3-staging-44",
+      "type": "S3",
+      "accountId": "acc_az",
+      "region": "us-east-1",
+      "status": "running",
+      "env": "staging",
+      "cost": 66,
+      "createdAt": "2026-07-16T16:33:06.288Z"
+    },
+    {
+      "id": "ast_da6bae50b3",
+      "name": "rds-dev-45",
+      "type": "RDS",
+      "accountId": "acc_prod",
+      "region": "ap-south-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 13,
+      "createdAt": "2026-07-13T16:33:06.288Z"
+    },
+    {
+      "id": "ast_b817721daf",
+      "name": "lambda-prod-46",
+      "type": "Lambda",
+      "accountId": "acc_stg",
+      "region": "us-west-2",
+      "status": "unused",
+      "env": "prod",
+      "cost": 50,
+      "createdAt": "2026-07-10T16:33:06.288Z"
+    },
+    {
+      "id": "ast_181fc2bada",
+      "name": "vpc-staging-47",
+      "type": "VPC",
+      "accountId": "acc_dev",
+      "region": "ap-southeast-2",
+      "status": "running",
+      "env": "staging",
+      "cost": 87,
+      "createdAt": "2026-07-07T16:33:06.288Z"
+    },
+    {
+      "id": "ast_944222fbf4",
+      "name": "ebs-dev-48",
+      "type": "EBS",
+      "accountId": "acc_az",
+      "region": "eu-west-1",
+      "status": "running",
+      "env": "dev",
+      "cost": 34,
+      "createdAt": "2026-07-04T16:33:06.288Z"
+    }
+  ],
+  "findings": [
+    {
+      "id": "fnd_1688acd1aa",
+      "title": "Public S3 bucket detected",
+      "severity": "critical",
+      "assetId": "ast_77fa6c4826",
+      "assetName": "ec2-prod-01",
+      "accountId": "acc_prod",
+      "region": "us-west-2",
+      "status": "open",
+      "created": "2026-11-22T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_51d00e0462",
+      "title": "Security group open to 0.0.0.0/0 on port 22",
+      "severity": "high",
+      "assetId": "ast_5e2ce0e7d0",
+      "assetName": "lambda-prod-04",
+      "accountId": "acc_az",
+      "region": "us-east-1",
+      "status": "open",
+      "created": "2026-11-21T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_6c7e9501ea",
+      "title": "Root account has no MFA",
+      "severity": "medium",
+      "assetId": "ast_e3bad159bb",
+      "assetName": "iam-prod-07",
+      "accountId": "acc_dev",
+      "region": "ap-southeast-2",
+      "status": "open",
+      "created": "2026-11-20T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_8b8312a68e",
+      "title": "Unencrypted EBS volume",
+      "severity": "low",
+      "assetId": "ast_a4eec0ee4b",
+      "assetName": "rds-prod-10",
+      "accountId": "acc_stg",
+      "region": "ap-south-1",
+      "status": "resolved",
+      "created": "2026-11-19T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_87b0dd266a",
+      "title": "RDS instance is publicly accessible",
+      "severity": "critical",
+      "assetId": "ast_4e2185edd7",
+      "assetName": "ebs-prod-13",
+      "accountId": "acc_prod",
+      "region": "eu-west-1",
+      "status": "open",
+      "created": "2026-11-18T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_c692c14ba5",
+      "title": "IAM access key unused for 90 days",
+      "severity": "high",
+      "assetId": "ast_a881c67fbf",
+      "assetName": "s3-prod-16",
+      "accountId": "acc_az",
+      "region": "us-west-2",
+      "status": "open",
+      "created": "2026-11-17T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_880e0723a6",
+      "title": "CloudTrail logging disabled",
+      "severity": "medium",
+      "assetId": "ast_b5c2b67c2b",
+      "assetName": "vpc-prod-19",
+      "accountId": "acc_dev",
+      "region": "us-east-1",
+      "status": "open",
+      "created": "2026-11-16T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_951464038d",
+      "title": "Public S3 bucket detected",
+      "severity": "low",
+      "assetId": "ast_6185b375fd",
+      "assetName": "ec2-prod-22",
+      "accountId": "acc_stg",
+      "region": "ap-southeast-2",
+      "status": "resolved",
+      "created": "2026-11-15T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_98cd4f5c38",
+      "title": "Security group open to 0.0.0.0/0 on port 22",
+      "severity": "critical",
+      "assetId": "ast_c6e2725867",
+      "assetName": "lambda-prod-25",
+      "accountId": "acc_prod",
+      "region": "ap-south-1",
+      "status": "open",
+      "created": "2026-11-14T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_5f471d1ee4",
+      "title": "Root account has no MFA",
+      "severity": "high",
+      "assetId": "ast_600051b1ea",
+      "assetName": "iam-prod-28",
+      "accountId": "acc_az",
+      "region": "eu-west-1",
+      "status": "open",
+      "created": "2026-11-13T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_443469aae1",
+      "title": "Unencrypted EBS volume",
+      "severity": "medium",
+      "assetId": "ast_d38d51ad49",
+      "assetName": "rds-prod-31",
+      "accountId": "acc_dev",
+      "region": "us-west-2",
+      "status": "open",
+      "created": "2026-11-12T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_751516abf8",
+      "title": "RDS instance is publicly accessible",
+      "severity": "low",
+      "assetId": "ast_41ef1da889",
+      "assetName": "ebs-prod-34",
+      "accountId": "acc_stg",
+      "region": "us-east-1",
+      "status": "resolved",
+      "created": "2026-11-11T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_7c5fc7f62c",
+      "title": "IAM access key unused for 90 days",
+      "severity": "critical",
+      "assetId": "ast_401f16d665",
+      "assetName": "s3-prod-37",
+      "accountId": "acc_prod",
+      "region": "ap-southeast-2",
+      "status": "open",
+      "created": "2026-11-10T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_f7471eddff",
+      "title": "CloudTrail logging disabled",
+      "severity": "high",
+      "assetId": "ast_7630c1a4df",
+      "assetName": "vpc-prod-40",
+      "accountId": "acc_az",
+      "region": "ap-south-1",
+      "status": "open",
+      "created": "2026-11-09T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_1582656372",
+      "title": "Public S3 bucket detected",
+      "severity": "medium",
+      "assetId": "ast_1509ee57bc",
+      "assetName": "ec2-prod-43",
+      "accountId": "acc_dev",
+      "region": "eu-west-1",
+      "status": "open",
+      "created": "2026-11-08T16:33:06.288Z"
+    },
+    {
+      "id": "fnd_20e3a737db",
+      "title": "Security group open to 0.0.0.0/0 on port 22",
+      "severity": "low",
+      "assetId": "ast_b817721daf",
+      "assetName": "lambda-prod-46",
+      "accountId": "acc_stg",
+      "region": "us-west-2",
+      "status": "resolved",
+      "created": "2026-11-07T16:33:06.288Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alt_c78471ee92",
+      "level": "info",
+      "message": "Scan finished: 48 assets checked",
+      "read": false,
+      "created": "2026-11-22T16:37:39.950Z"
+    },
+    {
+      "id": "alt_041f424119",
+      "level": "critical",
+      "message": "Public S3 bucket detected in Production AWS",
+      "read": false,
+      "created": "2026-11-22T16:33:06.288Z"
+    },
+    {
+      "id": "alt_970fb9b51f",
+      "level": "warning",
+      "message": "Analytics Azure account is disconnected",
+      "read": false,
+      "created": "2026-11-21T16:33:06.288Z"
+    },
+    {
+      "id": "alt_62b26cc5a4",
+      "level": "info",
+      "message": "Weekly sync completed for Staging AWS",
+      "read": true,
+      "created": "2026-11-20T16:33:06.288Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_04bb1b4d5c",
+      "user": "Admin",
+      "action": "Reopened finding",
+      "target": "Public S3 bucket detected",
+      "time": "2026-11-22T16:39:23.938Z"
+    },
+    {
+      "id": "log_3c3f7ef2d3",
+      "user": "Admin",
+      "action": "Reopened finding",
+      "target": "RDS instance is publicly accessible",
+      "time": "2026-11-22T16:39:22.205Z"
+    },
+    {
+      "id": "log_3ed65e687e",
+      "user": "Admin",
+      "action": "Resolved finding",
+      "target": "RDS instance is publicly accessible",
+      "time": "2026-11-22T16:39:21.355Z"
+    },
+    {
+      "id": "log_a7df1a1120",
+      "user": "Admin",
+      "action": "Resolved finding",
+      "target": "Public S3 bucket detected",
+      "time": "2026-11-22T16:39:20.139Z"
+    },
+    {
+      "id": "log_421f74e8d9",
+      "user": "Admin",
+      "action": "Scanned assets",
+      "target": "48 assets",
+      "time": "2026-11-22T16:37:39.950Z"
+    },
+    {
+      "id": "log_ea57da2d30",
+      "user": "Admin",
+      "action": "Generated report",
+      "target": "inventory",
+      "time": "2026-11-22T16:35:56.850Z"
+    },
+    {
+      "id": "log_c49667febb",
+      "user": "Admin",
+      "action": "Signed in",
+      "target": "admin@cloudinventory.com",
+      "time": "2026-11-22T16:33:32.691Z"
+    },
+    {
+      "id": "log_734148008a",
+      "user": "System",
+      "action": "Database created",
+      "target": "Cloud Asset Inventory",
+      "time": "2026-11-22T16:33:06.313Z"
+    }
+  ],
+  "reports": {
+    "inventory": "2026-11-22T16:35:56.850Z"
+  }
+}

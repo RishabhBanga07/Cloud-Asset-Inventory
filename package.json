@@ -1,0 +1,11 @@
+{
+  "name": "cloud-asset-inventory",
+  "version": "1.0.0",
+  "description": "Cloud asset inventory dashboard with a Node.js backend (no dependencies)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT"
+}
